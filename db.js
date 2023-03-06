@@ -5,6 +5,6 @@ const mysql = require('mysql2/promise');
 const bluebird = require('bluebird');
 
 // create the connection, specify bluebird as Promise
-const connection = mysql.createPool({host:'127.0.0.1', user: 'huy2', database: 'coolmate', password: '123456', Promise: bluebird});
+const connection = mysql.createPool({host:'localhost', user: 'root', database: 'coolmate_db', Promise: bluebird});
 
 module.exports= connection
